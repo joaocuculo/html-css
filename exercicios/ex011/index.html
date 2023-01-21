@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vário dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture> <!-- tag de imagen que é possível ter vários sources -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- 50px de folga por causa da barra de rolagem -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- 50px de folga por causa da barra de rolagem -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduxir audios em HTML5.</p>
+    <!-- PRIMEIRA MANEIRA
+        <audio src="midia/splashing-around.mp3" controls autoplay></audio>
+    formatos MP3 WAV OGG -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/splashing-around.mp3" type="audio/mpeg">
+        <source src="midia/splashing-around.ogg" type="audio/ogg">
+        <source src="midia/splashing-around.wav" type="audio/wav">
+        <!-- Ele vai tentar reproduzir de cima para baixo, se o primeiro der certo, o segundo e o terceiro não são carregados. Isso se tiver todos os arquivos-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio. Clique <a href="midia/splashing-around.mp3">aqui</a> para baixar o arquivo mp3.</p>
+    </audio>
+</body>
+</html>
