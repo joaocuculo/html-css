@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+                Shorthand - background
+                color > image > position > repeat > [size] mas por enquanto não funciona no shorthand > attachment
+            */
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +37,9 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magni magnam, dolorem est quam aliquam. Cupiditate fugiat minus maiores rem sint nam, consequuntur natus qui blanditiis, earum illo. Voluptate, aliquam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere assumenda modi placeat a voluptatibus exercitationem velit consequatur id temporibus nisi quam optio itaque, nesciunt hic obcaecati illo, corporis libero.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias neque, amet explicabo quis quam totam. Adipisci non inventore natus blanditiis fugiat qui minus, ullam nam. At itaque nostrum quas.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magni magnam, dolorem est quam aliquam. Cupiditate fugiat minus maiores rem sint nam, consequuntur natus qui blanditiis, earum illo. Voluptate, aliquam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere assumenda modi placeat a voluptatibus exercitationem velit consequatur id temporibus nisi quam optio itaque, nesciunt hic obcaecati illo, corporis libero.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias neque, amet explicabo quis quam totam. Adipisci non inventore natus blanditiis fugiat qui minus, ullam nam. At itaque nostrum quas.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magni magnam, dolorem est quam aliquam. Cupiditate fugiat minus maiores rem sint nam, consequuntur natus qui blanditiis, earum illo. Voluptate, aliquam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere assumenda modi placeat a voluptatibus exercitationem velit consequatur id temporibus nisi quam optio itaque, nesciunt hic obcaecati illo, corporis libero.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias neque, amet explicabo quis quam totam. Adipisci non inventore natus blanditiis fugiat qui minus, ullam nam. At itaque nostrum quas.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magni magnam, dolorem est quam aliquam. Cupiditate fugiat minus maiores rem sint nam, consequuntur natus qui blanditiis, earum illo. Voluptate, aliquam?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, facere assumenda modi placeat a voluptatibus exercitationem velit consequatur id temporibus nisi quam optio itaque, nesciunt hic obcaecati illo, corporis libero.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam molestias neque, amet explicabo quis quam totam. Adipisci non inventore natus blanditiis fugiat qui minus, ullam nam. At itaque nostrum quas.</p>
     </main>
 </body>
