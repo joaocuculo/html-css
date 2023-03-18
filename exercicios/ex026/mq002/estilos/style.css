@@ -11,13 +11,13 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(37, 156, 7);
+    background-color: #233eff;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 h1 {
     color: white;
-    text-shadow: 2px 2px 0px rgb(27, 114, 5);
+    text-shadow: 2px 2px 0px #152491;
     padding: 10px;
 }
